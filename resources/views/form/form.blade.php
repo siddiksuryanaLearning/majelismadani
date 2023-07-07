@@ -100,7 +100,7 @@
     <div class="mt-5">
         <hr>
         <div class="logo-wa">
-            <img src="{{ asset('img/logo wa.png') }}" alt="description of myimage" width="50" height="50"><a href="https://wa.me/+62816628323">Narahubung WhatsApp</a>
+            <img src="{{ asset('img/logo wa.png') }}" alt="description of myimage" width="50" height="50"><a href="https://wa.me/+6285220522000">Narahubung WhatsApp</a>
         </div>
     </div>
 
