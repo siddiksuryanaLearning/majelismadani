@@ -64,7 +64,7 @@
         </div>
     </section>
     {{-- Section Card Pengajuan --}}
-    <center><h1 class="mt-4"><i class="bi bi-check2-circle">Terima kasih, kami tunggu kehadiran anda di acara kami!.</i></h1>
+    <center><h3 class="mt-4"><i class="bi bi-check2-circle">Terima kasih, kami tunggu kehadiran anda di acara kami!.</i></h3>
 
 
     <a href="/" type="button" class="btn btn-success">Back?</a>
