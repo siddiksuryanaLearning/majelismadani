@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('participant', function (Blueprint $table) {
             $table->string('alamat');
-            $table->string('family_phone')->unique();
+            $table->string('family_phone');
         });
     }
 
