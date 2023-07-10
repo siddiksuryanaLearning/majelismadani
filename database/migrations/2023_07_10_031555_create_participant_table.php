@@ -11,16 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('participant', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('phone')->unique();
-            $table->string('kendaraan');
-            $table->string('status')->nullable();
-            $table->string('note')->nullable();
-            $table->softDeletes();
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('participant')) {
+            Schema::create('participant', function (Blueprint $table) {
+                $table->id();
+                $table->string('name');
+                $table->string('phone')->unique();
+                $table->string('kendaraan');
+                $table->string('status')->nullable();
+                $table->string('note')->nullable();
+                $table->softDeletes();
+                $table->timestamps();
+            });
+        }
     }
 
     /**
