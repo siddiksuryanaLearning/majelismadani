@@ -14,14 +14,28 @@ class StatsOverview extends BaseWidget
             Card::make('Total Pendaftaran', Participant::count())
                 ->description('peserta yang telah mengisi form')
                 ->chart([7, 2, 10, 3, 15, 4, 17])
-                ->descriptionIcon('heroicon-s-trending-up'),
+                ->chartColor('success')
+                ->descriptionIcon('heroicon-s-trending-up')
+                ->descriptionColor('success'),
             Card::make('Total Pendaftaran Hari ini ', Participant::whereDate('created_at', today())->count())
                 ->description('peserta yang daftar hari ini')
                 ->chart([7, 2, 10, 3, 15, 4, 17])
                 ->chartColor('primary')
                 ->descriptionIcon('heroicon-s-trending-up')
                 ->descriptionColor('primary'),
-            Card::make('Jumlah Hadir', Participant::query()->where('status', 'hadir')->count())
+            Card::make('Kendaraan Pribadi', Participant::query()->where('kendaraan', 'Kendaraan Pribadi')->count())
+                ->description('peserta menggunakan kendaraan pribadi')
+                ->chart([7, 2, 10, 3, 15, 4, 17])
+                ->chartColor('primary')
+                ->descriptionIcon('heroicon-s-trending-up')
+                ->descriptionColor('primary'),
+            Card::make('Bus', Participant::query()->where('kendaraan', 'Naik Bus')->count())
+                ->description('peserta menggunakan BUS')
+                ->chart([7, 2, 10, 3, 15, 4, 17])
+                ->chartColor('primary')
+                ->descriptionIcon('heroicon-s-trending-up')
+                ->descriptionColor('primary'),
+            Card::make('Hadir', Participant::query()->where('status', 'hadir')->count())
                 ->description('peserta yang telah terkonfirmasi hadir')
                 ->chart([7, 2, 10, 3, 15, 4, 17])
                 ->chartColor('success')

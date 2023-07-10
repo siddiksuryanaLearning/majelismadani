@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ParticipantResource\Pages;
-use App\Filament\Resources\ParticipantResource\RelationManagers;
 use App\Models\Participant;
 use Filament\Forms;
 use Filament\Forms\Components\Textarea;
@@ -11,10 +10,11 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Filament\Tables\Columns\SelectColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\Select;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
+
 
 class ParticipantResource extends Resource
 {
@@ -34,6 +34,12 @@ class ParticipantResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('kendaraan')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('alamat')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('family_phone')
                     ->required()
                     ->maxLength(255),
                 Select::make('status')
@@ -66,6 +72,16 @@ class ParticipantResource extends Resource
                     ->tooltip(fn ($record): string => $record->kendaraan)
                     ->sortable()
                     ->searchable(),
+                Tables\Columns\TextColumn::make('alamat')
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->tooltip(fn ($record): string => $record->alamat)
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('family_phone')
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->tooltip(fn ($record): string => $record->family_phone)
+                    ->sortable()
+                    ->searchable(),
                 Tables\Columns\SelectColumn::make('status')
                     ->toggleable(isToggledHiddenByDefault: true)
                     ->sortable()
@@ -94,12 +110,12 @@ class ParticipantResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
                 Tables\Actions\ForceDeleteBulkAction::make(),
                 Tables\Actions\RestoreBulkAction::make(),
+                ExportBulkAction::make(),
             ]);
     }
 

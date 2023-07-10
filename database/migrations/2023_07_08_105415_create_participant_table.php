@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone')->unique();
             $table->string('kendaraan');
+            $table->string('alamat');
+            $table->string('family_phone')->unique();
             $table->string('status')->nullable();
             $table->string('note')->nullable();
             $table->softDeletes();

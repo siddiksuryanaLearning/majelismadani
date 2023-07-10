@@ -170,6 +170,9 @@ return [
         'kendaraan' => [
             'required' => 'Field kendaraan harus diisi.',
         ],
+        'family_phone' => [
+            'unique' => 'Kontak kelurga telah terdaftar. Silahkan coba lagi dengan nomor lain',
+        ],
     ],
 
     /*

@@ -23,7 +23,7 @@
     @section('content')
     {{-- Section Header --}}
     <section class="header">
-        <nav class="bg-transparent navbar navbar-expand-lg navbar-dark">
+        {{-- <nav class="bg-transparent navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <div class="bilek">
                 
@@ -46,14 +46,14 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
         <div class="text-center">
-            <h2 class="mt-3 text-white medium">Fomulir kehadiran peresmian masjid Al-Muttaqien</h2>
-            <p class="italic text-white">Kami dengan hormat ingin mengundang anda untuk hadir dalam acara peresmian Masjid di Majelis Madani!<br>Silahkan isi form berikut.</p>
+            <h2 class="mt-3 text-white">Fomulir kehadiran peresmian masjid Al-Muttaqien dan Gerakan shodaqoh biaya pendidikan</h2>
+            <p class="italic text-white">Kami dengan hormat ingin mengundang anda untuk hadir dalam acara peresmian Masjid dan Gerakan shodaqoh biaya pendidikan<br>Silahkan isi form berikut.</p>
             <h6 class="italic text-white medium">Bersama : </h6>
             <p class="italic text-white">Ust.Dudi Mutaqin - Ust. Handy Bonny - Hengky Kurniawan - Ust.Evie Effendi</p>
-            <h5 class="mt-3 text-white medium" >Sabtu, 29 Juli 2023 Jam 08:00 - Selesai</h5>
+            <h5 class="mt-3 text-white medium" >Sabtu, 29 Juli 2023 Jam 06:00 - Selesai</h5>
             <p class="italic text-white">Jl. Sindangsari, Kabupaten Bandung Barat</p>
             
 
@@ -73,16 +73,29 @@
                 @endif
                 <form action="{{ route('store-participant') }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    <p>Keterangan Pengisian : <br>- 1 Pendaftar untuk 1 orang <br>- Bagi peserta yang akan menggunakan Bus, dikenakan biaya 60.000 rb / Orang
+                    <br> - Pembayaran :
+                    <br>Bank Syariah Indonesia - BSI an. Nurana Puji Susanto 
+                    <br>Kode Bank 451 - 716.779.778.9
+                    <br>( bukti transfer di kirim ke nana 085220522000 ) </p>
                     <div class="form-group">
-                    <label>Nama</label>
+                    <label>Nama*</label>
                         <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name" value="{{old('name')}}" required placeholder="Masukkan Nama">
                     </div>
                     <div class="form-group">
-                        <label>No. Wa/Telephone</label>
+                        <label>No. Wa/Telephone*</label>
                         <input type="text" class="form-control {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone" value="{{old('phone')}}" required placeholder="Masukkan No.Telp"/>
                     </div>
+                    <div class="form-group">
+                        <label>Alamat*</label>
+                        <input type="text" class="form-control {{ $errors->has('alamat') ? 'error' : '' }}" name="alamat" id="alamat" value="{{old('alamat')}}" required placeholder="Masukkan Alamat"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Kontak Keluarga yang bisa dihubungi*</label>
+                        <input type="text" class="form-control {{ $errors->has('family_phone') ? 'error' : '' }}" name="family_phone" id="family_phone" value="{{old('family_phone')}}" required placeholder="Masukkan kontak keluarga"/>
+                    </div>
                     <div class="form-group>
-                        <label class="mt-2 col-sm-3 col-form-label">Kendaraan</label>
+                        <label class="mt-2 col-sm-3 col-form-label">Kendaraan*</label>
                         <div class="col-sm-9">
                             <input type="radio" name="kendaraan" value="Kendaraan Pribadi"> Kendaraan Pribadi
                         </div>
