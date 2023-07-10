@@ -66,7 +66,7 @@ class ParticipantStoreRequest extends FormRequest
             'phone' => 'required|unique:participant,phone|regex:/^([0-9\s\-\+\(\)]*)$/|min:10|numeric',
             'kendaraan' => 'required',
             'alamat' => 'required|max:255|min:3',
-            'family_phone' => 'required|unique:participant,family_phone|regex:/^([0-9\s\-\+\(\)]*)$/|min:10|numeric'
+            'family_phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10|numeric'
         ];
     }
 }
