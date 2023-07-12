@@ -29,11 +29,13 @@ class RegisterComponent extends Component implements HasForms
             Grid::make()
                 ->schema([
                     TextInput::make('name')
+                        ->debounce(1000)
                         ->required()
                         ->label("Nama")
                         ->maxLength(255),
                     TextInput::make('phone')
                         ->required()
+                        ->debounce(1000)
                         ->label('No. WA/ Telephone')
                         ->maxLength(14),
                     Textarea::make('address')
@@ -59,10 +61,17 @@ class RegisterComponent extends Component implements HasForms
                         ->minItems(1)
                         ->schema([
                             TextInput::make('name')
+                                // ->dehydrateStateUsing(fn ($state, $get, $set) => $set('name', $get('../../name')))
+                                ->afterStateHydrated(fn ($state, $get, $set) => $set('name', $get('../../name')))
+                                ->debounce(1000)
                                 ->required()
                                 ->disableLabel()
                                 ->maxLength(255),
                             TextInput::make('phone')
+                                // ->afterStateUpdated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
+                                ->afterStateHydrated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
+                                ->debounce(1000)
+                                ->required()
                                 ->disableLabel()
                                 ->maxLength(24)
                         ])
@@ -88,12 +97,12 @@ class RegisterComponent extends Component implements HasForms
             ])
         );
 
-        collect( Arr::get($data, 'participants') )->each(function($participant) use ($order) {
-           Participant::query()->create([
-               'order_id'   =>  $order->id,
-               'name'   =>  data_get($participant, 'name'),
-               'phone'   =>  data_get($participant, 'phone'),
-           ]);
+        collect(Arr::get($data, 'participants'))->each(function ($participant) use ($order) {
+            Participant::query()->create([
+                'order_id'   =>  $order->id,
+                'name'   =>  data_get($participant, 'name'),
+                'phone'   =>  data_get($participant, 'phone'),
+            ]);
         });
 
         $order->update([

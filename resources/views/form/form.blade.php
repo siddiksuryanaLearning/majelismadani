@@ -29,7 +29,7 @@
     @section('content')
 
         {{-- Section Header --}}
-        {{-- <section class="header container bg-info">
+        {{-- <section class="container header bg-info">
         <nav class="bg-transparent navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <div class="bilek">
@@ -62,12 +62,12 @@
         <div class="text-center bg-primary lh-lg">
             <h4 class="mt-3 text-white lh-lg">Silaturahmi Akbar Peresmian Masjid Al-Muttaqien Madrasah
             Karya Madani dan Gerakan shodaqoh biaya pendidikan</h4>
-            <img class="img-fluid rounded-circle mx-1" src="{{ asset('img/poster.jpeg') }}" alt="description of myimage">
+            <img class="mx-1 img-fluid rounded-circle" src="{{ asset('img/poster.jpeg') }}" alt="description of myimage">
             <h6 class="mt-1 italic text-white medium">Bersama : </h6>
             <p class="italic text-white">Ust.Dudi Mutaqin - Ust. Handy Bonny - Hengky Kurniawan - Ust.Evie Effendi</p>
             <h5 class="mt-3 text-white medium" >Sabtu, 29 Juli 2023 Jam 06:00 - Selesai</h5>
             <p class="italic text-white">Jl. Sindangsari, Kabupaten Bandung Barat</p>
-            <p class="italic text-white mx-2 lh-lg">Kami dengan hormat ingin mengundang anda untuk hadir dalam acara peresmian Masjid dan Gerakan shodaqoh biaya pendidikan<br>Silahkan isi form berikut.</p>
+            <p class="mx-2 italic text-white lh-lg">Kami dengan hormat ingin mengundang anda untuk hadir dalam acara peresmian Masjid dan Gerakan shodaqoh biaya pendidikan<br>Silahkan isi form berikut.</p>
             
             
 
@@ -136,7 +136,7 @@
                             <input type="radio" class="" name="kendaraan" value="Naik Bus"> Naik Bus
                         </div>
                     </div> --}}
-        {{-- <div class="form-check mb-2">
+        {{-- <div class="mb-2 form-check">
                     <input class="form-check-input" type="radio" name="kendaraan" value="Kendaraan Pribadi" checked>
                     <label class="form-check-label" for="flexRadioDefault1">
                         Kendaraan Pribadi
@@ -156,15 +156,15 @@
 
     </div> --}}
         {{-- Footer --}}
-        {{-- <div class="h-screen w-screen">
-        <img class="img-fluid object-cover h-full w-full" src="{{ asset('img/Frame.png') }}" alt="description of myimage">
+        {{-- <div class="w-screen h-screen">
+        <img class="object-cover w-full h-full img-fluid" src="{{ asset('img/Frame.png') }}" alt="description of myimage">
         
     </div> --}}
         <section class="bg-white dark:bg-gray-900" style="background-image: url('img/Frame.jpg')">
             <div class="grid max-w-screen-xl px-4 py-2 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="mr-auto place-self-center lg:col-span-7">
                     <h1
-                        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-8xl text-white">
+                        class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-8xl">
                         Silaturahmi <br>Akbar</h1>
                     <p class="max-w-2xl mb-6 font-bold text-orange-400 lg:mb-8 md:text-lg lg:text-4xl dark:text-gray-400">
                         Peresmian Masjid Al-Muttaqien Madrasah
@@ -174,13 +174,13 @@
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a> --}}
                     <a href="#input-form"
-                        class="inline-flex bg-orange-600 items-center justify-center px-4 py-2 text-white font-large text-center text-white-900 border border-orange-300 rounded-lg hover:bg-orange-100 focus:ring-4 focus:ring-orange-100 dark:text-orange dark:border-orange-700 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+                        class="inline-flex items-center justify-center px-4 py-2 text-center text-white bg-orange-600 border border-orange-300 rounded-lg font-large text-white-900 hover:bg-orange-100 focus:ring-4 focus:ring-orange-100 dark:text-orange dark:border-orange-700 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
                         Daftar
                     </a>
                 </div>
-                <div class="lg:mt-0 lg:col-span-5 lg:flex mt-4">
-                    <img src="img/Background.jpeg"
-                        class="bg-cover bg-center sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
+                <div class="mt-4 lg:mt-0 lg:col-span-5 lg:flex">
+                    <img src="img/Background.jpeg"  
+                        class="bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                         alt="mockup">
                 </div>
             </div>
@@ -191,28 +191,28 @@
             <div class="grid max-w-screen-xl px-4 py-6 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="mr-auto place-self-center lg:col-span-12">
                     <h1
-                        class="mb-4 text-2xl text-orange-400 font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-center">
+                        class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-center text-orange-400 md:text-5xl xl:text-4xl">
                         Tentang Acara</h1>
-                    <p class="font-light mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white text-center">Kami dengan hormat
+                    <p class="mb-6 font-light text-center text-white lg:mb-8 md:text-lg lg:text-2xl">Kami dengan hormat
                         ingin mengundang anda untuk hadir dalam acara peresmian Masjid dan Gerakan shodaqoh biaya pendidikan
                     </p>
-                    <p class="mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white text-center">Sabtu, 29 Juli 2023 Jam 06:00 s/d
+                    <p class="mb-6 text-center text-white lg:mb-8 md:text-lg lg:text-2xl">Sabtu, 29 Juli 2023 Jam 06:00 s/d
                         Selesai
                         <br>Jl. Sindangsari, Kabupaten Bandung Barat
                     </p>
-                    <div class="lg:mt-0 lg:col-span-5 lg:flex mt-4 flex justify-center">
+                    <div class="flex justify-center mt-4 lg:mt-0 lg:col-span-5 lg:flex">
                         <img src="img/maps.png"
-                            class="justify-center bg-cover bg-center sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
+                            class="justify-center bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                             alt="mockup">
                     </div>
-                    <p class="font-light mb-6 mt-2 lg:mb-8 md:text-lg lg:text-2xl text-white text-center"> maps : <a
+                    <p class="mt-2 mb-6 font-light text-center text-white lg:mb-8 md:text-lg lg:text-2xl"> maps : <a
                             class="font-bold text-white"
                             href="https://goo.gl/maps/jyMto8McUgRn9cte7">https://goo.gl/maps/jyMto8McUgRn9cte7</a></p>
 
 
                 </div>
-                {{-- <div class="lg:mt-0 lg:col-span-5 lg:flex mt-4">
-            <img src="img/Background.jpeg" class="bg-cover bg-center sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom " alt="mockup">
+                {{-- <div class="mt-4 lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="img/Background.jpeg" class="bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom " alt="mockup">
         </div>                 --}}
             </div>
         </section>
@@ -222,7 +222,7 @@
             <div class="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="lg:mt-0 lg:col-span-12 lg:scale-100">
                     <img src="img/pemateri.png"
-                        class="bg-cover bg-center sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
+                        class="bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                         alt="mockup">
                 </div>
             </div>
@@ -233,23 +233,23 @@
             <div class="grid max-w-screen-xl px-4 py-6 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="mr-auto place-self-center lg:col-span-12">
                     <h1
-                        class="mb-4 text-2xl text-orange-400 font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-center">
+                        class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-center text-orange-400 md:text-5xl xl:text-4xl">
                         Cara Daftar</h1>
-                    <p class="font-light mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white">1. Isi Formuliar Pendaftaran pada
+                    <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Isi Formuliar Pendaftaran pada
                         link https://madani.scaleupiman.com</p>
-                    <p class="font-light mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white">2. Bagi peserta yang menggukana
+                    <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Bagi peserta yang menggukana
                         BUS, dikenakan biaya sebesar <span class="font-bold"> 60.000/orang </span> & silahkan transfer nomor
                         rekening di bawah ini :</p>
-                    <div class="sm:flex sm:flex-row sm:justify-center sm:border-2 items-center border-2"
+                    <div class="items-center border-2 sm:flex sm:flex-row sm:justify-center sm:border-2"
                         style="text-align: center;">
-                        <img src="img/bsi.png" class="bg-cover bg-center sm:scale-75 items-center scale-50"
+                        <img src="img/bsi.png" class="items-center scale-50 bg-center bg-cover sm:scale-75"
                             style="display: inline-block;" alt="mockup">
-                        <p class="font-light mb-4 mx-0 lg:mb-8 md:text-lg lg:text-2xl text-white">Bank Syariah Indonesia
+                        <p class="mx-0 mb-4 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">Bank Syariah Indonesia
                             <br>an. Nurana Puji Susanto
                             <br>Kode Bank 451 - 716.779.778.9
                         </p>
                     </div>
-                    <p class="font-light mt-4 mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white">3. Setelah itu kirim bukti
+                    <p class="mt-4 mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">3. Setelah itu kirim bukti
                         transfer ke nana 085220522000 (Untuk kendaraan Bus)</p>
                 </div>
             </div>
@@ -257,17 +257,17 @@
             {{-- Form Pendaftaran --}}
         </section>
 
-        <section class="bg-indigo-50 flex justify-center items-center h-screen">
+        <section class="flex items-center justify-center h-screen bg-indigo-50">
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger">{{ $error }}</div>
                 @endforeach
             @endif
-            <form id="input-form" class="sm:w-1/2 bg-white-100 p-6 rounded-lg w-full"
+            <form id="input-form" class="w-full p-6 rounded-lg sm:w-1/2 bg-white-100"
                 action="{{ route('store-participant') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group" id="input-container">
-                    <h1 class="mb-3 text-center mt-5">Formulir Pendaftaran</h1>
+                    <h1 class="mt-5 mb-3 text-center">Formulir Pendaftaran</h1>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nama*</label>
                         <input type="text" class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name"
@@ -287,7 +287,7 @@
                         <div id="emailHelp" class="form-text">Masukan Alamat</div>
                     </div>
                     <label class="mb-3">Kendaraan*</label>
-                    <div class="form-check mb-2">
+                    <div class="mb-2 form-check">
                         <input class="form-check-input" type="radio" name="kendaraan" value="Kendaraan Pribadi" checked>
                         <label class="form-check-label" for="flexRadioDefault1">
                             Kendaraan Pribadi
@@ -299,14 +299,14 @@
                             Naik Bus
                         </label>
                     </div>
-                    <div class="mb-3 mt-2">
+                    <div class="mt-2 mb-3">
                         <label for="exampleInputEmail1" class="form-label">Kontak Keluarga*</label>
                         <input type="text" class="form-control {{ $errors->has('family_phone') ? 'error' : '' }}"
                             name="family_phone" id="family_phone" value="{{ old('family_phone') }}" required />
                         <div id="emailHelp" class="form-text">Kontak keluarga yang bisa dihubungi</div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary px-4 py-2 mb-5">Kirim</button>
+                <button type="submit" class="px-4 py-2 mb-5 btn btn-primary">Kirim</button>
             </form>
 
             {{-- </div>   
@@ -324,10 +324,10 @@
         }"
             class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
             <div class="container mx-auto">
-                <div class="-mx-4 flex flex-wrap">
+                <div class="flex flex-wrap -mx-4">
                     <div class="w-full px-4">
                         <div class="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-                            <span class="mb-2 block text-lg font-semibold text-primary">
+                            <span class="block mb-2 text-lg font-semibold text-primary">
                                 FAQ
                             </span>
                             <h2 class="mb-4 text-2xl font-bold text-dark sm:text-4xl md:text-[40px]">
@@ -339,14 +339,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="-mx-4 flex flex-wrap">
+                <div class="flex flex-wrap -mx-4">
                     <div class="w-full px-4 lg:w-1/2">
                         <div
                             class="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
-                            <button class="faq-btn flex w-full text-left" @click="openFaq1 = !openFaq1">
+                            <button class="flex w-full text-left faq-btn" @click="openFaq1 = !openFaq1">
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-blue-900 bg-opacity-5 text-primary">
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
+                                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
                                         <path
                                             d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
                                             fill="#3056D3" stroke="#3056D3" />
@@ -368,10 +368,10 @@
                     <div class="w-full px-4 lg:w-1/2">
                         <div
                             class="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
-                            <button class="faq-btn flex w-full text-left" @click="openFaq2 = !openFaq2">
+                            <button class="flex w-full text-left faq-btn" @click="openFaq2 = !openFaq2">
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-blue-900 bg-opacity-5 text-primary">
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
+                                    <svg width="17" height="10" viewBox="0 0 17 10" class="fill-current icon">
                                         <path
                                             d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
                                             fill="#3056D3" stroke="#3056D3" />
@@ -412,9 +412,9 @@
         </section>
         <!-- ====== FAQ Section End -->
 
-        <div class="fixed bottom-4 right-4 z-50 flex items-center">
-            <a href="https://wa.me/+6285220522000" class="flex items-center bg-green-500 rounded-full p-2 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white mr-2" fill="none"
+        <div class="fixed z-50 flex items-center bottom-4 right-4">
+            <a href="https://wa.me/+6285220522000" class="flex items-center p-2 bg-green-500 rounded-full shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-white" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 6l3 9a5 5 0 007 3m4 0a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h9a5 5 0 015 5v9a5 5 0 01-5 5h-3">

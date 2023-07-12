@@ -36,6 +36,7 @@
                         Terimakasih telah Mendaftar</h1>
                     <p class="font-light mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white">Berikut data yang telah anda
                         masukan</p>
+                    <p></p>
                     <p class="font-light mb-6 lg:mb-8 md:text-lg lg:text-2xl text-white">Kirim pembayaran ke No rekening :
                     </p>
                     <div class="sm:flex sm:flex-row sm:justify-center sm:border-2 items-center border-2"
