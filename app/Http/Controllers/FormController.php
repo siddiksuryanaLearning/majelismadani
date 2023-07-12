@@ -36,30 +36,7 @@ class FormController extends Controller
      */
     public function show()
     {
-        return view('form.form');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Peserta $peserta)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Peserta $peserta)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Peserta $peserta)
-    {
-        //
+        return view('homepage');
+//        return view('form.form');
     }
 }

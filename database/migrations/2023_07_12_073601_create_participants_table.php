@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (!Schema::hasTable('participant')) {
-            Schema::table('participant', function (Blueprint $table) {
-                $table->string('alamat');
-                $table->string('family_phone');
-            });
-        }
+        Schema::create('participants', function (Blueprint $table) {
+            $table->id();
+            $table->foreignIdFor(\App\Models\Order::class)->constrained();
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -24,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('participant', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('participants');
     }
 };
