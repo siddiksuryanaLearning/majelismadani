@@ -72,7 +72,6 @@ class RegisterComponent extends Component implements HasForms
                                 ->afterStateHydrated(function ($state, $get, $set, $livewire) {
                                     $participants = collect($get('../../participants'));
                                     $first_key = $participants->keys()->first();
-
                                     $participants->each(fn ($value, $key) => ($key == $first_key) ? data_set($livewire, 'data.participants.' . $first_key . '.name', $get('../../name')) : '');
                                 })
                                 ->debounce(1000)
@@ -81,7 +80,12 @@ class RegisterComponent extends Component implements HasForms
                                 ->maxLength(255),
                             TextInput::make('phone')
                                 // ->afterStateUpdated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
-                                ->afterStateHydrated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
+                                // ->afterStateHydrated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
+                                ->afterStateHydrated(function ($state, $get, $set, $livewire) {
+                                    $participants = collect($get('../../participants'));
+                                    $first_key = $participants->keys()->first();
+                                    $participants->each(fn ($value, $key) => ($key == $first_key) ? data_set($livewire, 'data.participants.' . $first_key . '.phone', $get('../../phone')) : '');
+                                })
                                 ->debounce(1000)
                                 ->required()
                                 ->disableLabel()
@@ -101,6 +105,7 @@ class RegisterComponent extends Component implements HasForms
     public function submit()
     {
         $data = $this->form->getState();
+        $data['phone'] = ($data['phone'][0] == '0') ? substr_replace($data['phone'], '62', 0, 1) : $data['phone'];
         $order = Order::query()->create(
             Arr::only($data, [
                 'name',
