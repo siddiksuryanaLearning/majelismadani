@@ -7,6 +7,7 @@ use App\Models\Participant;
 use Awcodes\FilamentTableRepeater\Components\TableRepeater;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Textarea;
@@ -91,6 +92,12 @@ class RegisterComponent extends Component implements HasForms
                                 ->disableLabel()
                                 ->maxLength(24)
                                 ->unique(ignoreRecord: true),
+                            Hidden::make('vehicle')
+                                // ->afterStateUpdated(fn ($state, $get, $set) => $set('phone', $get('../../phone')))
+                                ->afterStateHydrated(fn ($state, $get, $set) => $set('vehicle', $get('../../vehicle')))
+                                ->debounce(1000)
+                                ->required()
+                                ->disableLabel()
                         ])
                 ])
                 ->columns(1)
@@ -105,7 +112,7 @@ class RegisterComponent extends Component implements HasForms
     public function submit()
     {
         $data = $this->form->getState();
-        $data['phone'] = ($data['phone'][0] == '0') ? substr_replace($data['phone'], '62', 0, 1) : $data['phone'];
+        $data['phone'] = (substr($data['phone'], 0, 4) === '+628') ? '628' . substr($data['phone'], 4) : ((substr($data['phone'], 0, 2) === '08') ? '628' . substr($data['phone'], 2) : ((substr($data['phone'], 0, 4) === '6208') ? '628' . substr($data['phone'], 4) : ((substr($data['phone'], 0, 1) === '8') ? '628' . substr($data['phone'], 1) : $data['phone'])));
         $order = Order::query()->create(
             Arr::only($data, [
                 'name',
@@ -120,6 +127,8 @@ class RegisterComponent extends Component implements HasForms
                 'order_id'   =>  $order->id,
                 'name'   =>  data_get($participant, 'name'),
                 'phone'   =>  data_get($participant, 'phone'),
+                'vehicle'   =>  data_get($participant, 'vehicle'),
+
             ]);
         });
 

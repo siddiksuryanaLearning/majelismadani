@@ -61,9 +61,9 @@
             <h1
                 class="mb-8 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
                 Cara Hadir</h1>
-            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Isi Formuliar Pendaftaran pada
+            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Isi Formulir Pendaftaran pada
                 link https://madani.scaleupiman.com</p>
-            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Bagi peserta yang menggukana
+            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Bagi peserta yang menggunakan
                 BUS, dikenakan biaya sebesar <span class="font-bold"> 60.000/orang </p>
             <p class="mt-4 mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">3. Setelah itu kirim bukti
                 transfer ke nana 085220522000 (Untuk kendaraan Bus)</p>

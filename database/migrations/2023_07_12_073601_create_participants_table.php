@@ -11,13 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('participants', function (Blueprint $table) {
-            $table->id();
-            $table->foreignIdFor(\App\Models\Order::class)->constrained();
-            $table->string('name');
-            $table->string('phone')->nullable();
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('participants')) {
+            Schema::create('participants', function (Blueprint $table) {
+                $table->id();
+                $table->foreignIdFor(\App\Models\Order::class)->constrained();
+                $table->string('name');
+                $table->string('phone')->nullable();
+                $table->timestamps();
+            });
+        }
     }
 
     /**
