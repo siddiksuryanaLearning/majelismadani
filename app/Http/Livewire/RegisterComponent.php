@@ -37,7 +37,11 @@ class RegisterComponent extends Component implements HasForms
                         ->required()
                         ->debounce(1000)
                         ->label('No. WA/ Telephone')
-                        ->maxLength(14),
+                        ->maxLength(14)
+                        ->unique(Order::class, 'phone')
+                        ->tel()
+                        ->numeric()
+                        ->telRegex('/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\.\/0-9]*$/'),
                     Textarea::make('address')
                         ->required()
                         ->label("Alamat")
@@ -61,8 +65,16 @@ class RegisterComponent extends Component implements HasForms
                         ->minItems(1)
                         ->schema([
                             TextInput::make('name')
-                                // ->dehydrateStateUsing(fn ($state, $get, $set) => $set('name', $get('../../name')))
-                                ->afterStateHydrated(fn ($state, $get, $set) => $set('name', $get('../../name')))
+                                // ->dehydrateStateUsing(function ($state, $get, $set, $statePath) {
+                                //     dd($get('../../participants'), $statePath);
+                                //     $set('name', $get('../../name'));
+                                // })
+                                ->afterStateHydrated(function ($state, $get, $set, $livewire) {
+                                    $participants = collect($get('../../participants'));
+                                    $first_key = $participants->keys()->first();
+
+                                    $participants->each(fn ($value, $key) => ($key == $first_key) ? data_set($livewire, 'data.participants.' . $first_key . '.name', $get('../../name')) : '');
+                                })
                                 ->debounce(1000)
                                 ->required()
                                 ->disableLabel()
@@ -74,6 +86,7 @@ class RegisterComponent extends Component implements HasForms
                                 ->required()
                                 ->disableLabel()
                                 ->maxLength(24)
+                                ->unique(ignoreRecord: true),
                         ])
                 ])
                 ->columns(1)
