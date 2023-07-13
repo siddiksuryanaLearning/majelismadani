@@ -5,13 +5,17 @@
 
             <div class="flex items-center justify-center mx-2 mb-6">
                 <div>
-                    <h1 class="flex pb-2 text-4xl font-bold">Silaturahim Akbar</h1>
-                    <p class="pb-5">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan shodaqoh biaya
+                    <h1 class="flex pb-2 text-4xl font-bold py-14 px-7 sm:py-0 sm:px-0">Silaturahim Akbar</h1>
+                    <p class="px-6 pb-5 sm:py-4 sm:px-0">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan
+                        shodaqoh
+                        biaya
                         pendidikan</p>
-                    <a href="#form"
-                        class="text-white sm:flex w-2/3 justify-center bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl px-5 py-2.5 text-center mr-2 mb-2">
-                        Daftar Sekarang
-                    </a>
+                    <div class="flex px-6 sm:pl-0 sm:flex">
+                        <a href="#form"
+                            class="text-white sm:flex w-2/3 justify-center bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl py-2.5 text-center mr-2 mb-2">
+                            Daftar Sekarang
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="flex flex-row-reverse sm:mt-6">

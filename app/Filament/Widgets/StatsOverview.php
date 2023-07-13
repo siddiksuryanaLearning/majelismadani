@@ -24,13 +24,13 @@ class StatsOverview extends BaseWidget
                 ->chartColor('primary')
                 ->descriptionIcon('heroicon-s-trending-up')
                 ->descriptionColor('primary'),
-            Card::make('Kendaraan Pribadi', Order::query()->where('vehicle', 'private')->count())
+            Card::make('Kendaraan Pribadi', Participant::query()->where('vehicle', 'private')->count())
                 ->description('peserta menggunakan kendaraan pribadi')
                 ->chart([7, 2, 10, 3, 15, 4, 17])
                 ->chartColor('primary')
                 ->descriptionIcon('heroicon-s-trending-up')
                 ->descriptionColor('primary'),
-            Card::make('Bus', Order::query()->where('vehicle', 'bus')->count())
+            Card::make('Bus', Participant::query()->where('vehicle', 'bus')->count())
                 ->description('peserta menggunakan BUS')
                 ->chart([7, 2, 10, 3, 15, 4, 17])
                 ->chartColor('primary')
