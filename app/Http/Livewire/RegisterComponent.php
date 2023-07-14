@@ -37,7 +37,7 @@ class RegisterComponent extends Component implements HasForms
                     TextInput::make('phone')
                         ->required()
                         ->debounce(1000)
-                        ->label('No. WA/ Telephone')
+                        ->label('No. WA/Telepon')
                         ->maxLength(14)
                         ->unique(Order::class, 'phone')
                         ->tel()
@@ -53,7 +53,7 @@ class RegisterComponent extends Component implements HasForms
                         ->required()
                         ->options([
                             'private'   =>  'Pribadi',
-                            'bus'   =>  'BIS'
+                            'bus'   =>  'BUS'
                         ])
                         ->descriptions([
                             'private'   =>  'Gratis',

@@ -7,9 +7,9 @@
                 <div>
                     <h1 class="flex pb-2 text-4xl font-bold py-14 px-7 sm:py-0 sm:px-0">Silaturahim Akbar</h1>
                     <p class="px-6 pb-5 sm:py-4 sm:px-0">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan
-                        shodaqoh
-                        biaya
-                        pendidikan</p>
+                        Shodaqoh
+                        Biaya
+                        Pendidikan</p>
                     <div class="flex px-6 sm:pl-0 sm:flex">
                         <a href="#form"
                             class="text-white sm:flex w-2/3 justify-center bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl py-2.5 text-center mr-2 mb-2">
@@ -52,10 +52,13 @@
         </div>
     </section>
     <section id="speakers" class="text-white bg-center bg-cover"
-        style="background-image: url('{{ asset('img/pemateri.png') }}');">
-        <div class="max-w-4xl py-10 mx-auto">
-            <img src="{{ asset('img/pemateri.png') }}"
-                class="bg-center bg-cover opacity-0 sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
+        style="background-image: url('{{ asset('img/Frame.jpg') }}');">
+        <div class="max-w-4xl mx-auto">
+            <h1
+                class="py-6 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
+                Pemateri</h1>
+            <img src="{{ asset('img/pemateri_update.png') }}"
+                class="w-3/4 mx-auto bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                 alt="mockup">
         </div>
     </section>
@@ -68,9 +71,9 @@
             <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Isi Formulir Pendaftaran pada
                 link https://madani.scaleupiman.com</p>
             <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Bagi peserta yang menggunakan
-                BUS, dikenakan biaya sebesar <span class="font-bold"> 60.000/orang </p>
+                bus, dikenakan biaya sebesar <span class="font-bold"> Rp60.000/orang </p>
             <p class="mt-4 mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">3. Setelah itu kirim bukti
-                transfer ke nana 085220522000 (Untuk kendaraan Bus)</p>
+                transfer ke Nana 085220522000 (Untuk kendaraan bus)</p>
         </div>
     </section>
     <section id="form" class="bg-white">
@@ -94,7 +97,7 @@
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4">
                     <div class="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-                        <h2 class="mb-4 text-2xl font-bold text-dark sm:text-4xl md:text-[32px]">
+                        <h2 class="mb-4 text-xl font-bold text-dark sm:text-4xl md:text-[32px]">
                             Pertanyaan Yang Sering Diajukan
                         </h2>
 
@@ -122,8 +125,9 @@
                         </button>
                         <div x-show="openFaq1" class="faq-content pl-[62px]">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                Acara ini tidak dikenakan biaya apapun. *Kecuali untuk peserta yang menggunakan
-                                kendaraan bus*. </p>
+                                Acara ini tidak dikenakan biaya apapun. <span class="italic">(Kecuali untuk peserta yang
+                                    menggunakan
+                                    kendaraan bus ).</span> </p>
                         </div>
                     </div>
                     <div
@@ -171,7 +175,7 @@
                         <div x-show="openFaq2" class="faq-content pl-[62px]">
                             <p class="py-3 text-base leading-relaxed text-body-color">
                                 Kami sarankan untuk membuka link yang telah tersedia untuk membuka google maps agar
-                                tidak terjadi hal yang tidak diinginkan. *Misalnya Tersesat*
+                                tidak terjadi hal yang tidak diinginkan. <span class="italic">( Misalnya Tersesat ).</span>
                             </p>
                         </div>
                     </div>
@@ -221,12 +225,12 @@
         </div>
     </section>
 
-    <div class="fixed z-50 flex items-center bottom-4 right-4">
+    <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
         <a href="https://wa.me/+6285220522000"
-            class="flex items-center px-6 py-2 m-4 rounded-full shadow-lg bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
+            class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
             <img src="{{ asset('img/icon_wa2.png') }}" class="w-12">
             &nbsp;&nbsp;
-            <span class="text-2xl text-white">Hubungi Kami</span>
+            <span class="w-full text-xl text-white sm:text-2xl">Hubungi Kami</span>
         </a>
     </div>
 
