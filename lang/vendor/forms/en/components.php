@@ -128,7 +128,7 @@ return [
         'buttons' => [
 
             'create_item' => [
-                'label' => 'Add to :label',
+                'label' => 'Tambah :label',
             ],
 
             'delete_item' => [

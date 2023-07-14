@@ -1,6 +1,6 @@
 <form wire:submit.prevent="submit">
     <div class="py-2">
-        <h1 class="mb-2 text-2xl font-bold text-center sm:text-4xl sm:my-6 ">Form Pemesanan Tiket</h1>
+        <h1 class="mb-2 text-2xl font-bold text-center sm:text-4xl sm:my-6 ">Formulir Kehadiran</h1>
         <p class="my-2 text-md text-slate-500">Nama Pemesan Harus dimasukan di kolom Peserta</p>
         {{ $this->form }}
     </div>

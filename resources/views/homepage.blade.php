@@ -1,29 +1,29 @@
 @extends('layouts.base')
 @section('body')
-    <section id="heros" class="text-white" style="background-image: url('{{ asset('img/bg-heros.png') }}');">
-        <div class="flex-row-reverse max-w-4xl mx-auto sm:flex">
-            <div class="flex flex-row-reverse sm:mx-12 sm:mt-6">
-                <img src="{{ asset('img/Pematri_update.jpg') }}" alt="Cover" class="h-4/5">
-            </div>
-            <div class="flex items-center justify-center mx-2">
-                <div>
-                    <h1 class="flex pb-2 text-4xl font-bold py-14 px-7 sm:py-0 sm:px-0">Silaturahmi Akbar</h1>
-                    <p class="px-6 pb-5 sm:py-4 sm:px-0">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan
-                        Shodaqoh
-                        Biaya
-                        Pendidikan</p>
-                    <div class="flex justify-center px-6 mb-4 sm:ml-0 sm:pl-0 sm:flex">
+    <section id="heros" class="w-full text-white" style="background-image: url('{{ asset('img/bg-heros.png') }}');">
+        <div class="flex flex-col items-center justify-center max-w-4xl mx-auto sm:flex">
 
-                        <a href="#form"
-                            class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                            <span
-                                class="relative text-2xl px-10  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                Daftar Sekarang
-                            </span>
-                        </a>
-                    </div>
-                </div>
+            <h1 class="flex pb-2 text-4xl font-bold sm:mt-10 py-14 px-7 sm:py-0 sm:px-0">Silaturahmi Akbar</h1>
+            <p class="px-6 pb-5 text-xl text-center sm:py-4 sm:px-0">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani
+                <br>dan Gerakan
+                Shodaqoh
+                Biaya
+                Pendidikan
+            </p>
+            <div class="flex flex-row-reverse sm:w-1/2 sm:mx-12 sm:mt-6">
+                <img src="{{ asset('img/pemater_terupdate.png') }}" alt="Cover" class="h-4/5">
             </div>
+            <div class="flex justify-center px-6 mt-10 mb-4 sm:pl-0 sm:flex">
+
+                <a href="#form"
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                    <span
+                        class="relative text-2xl px-10  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Daftar Sekarang
+                    </span>
+                </a>
+            </div>
+        </div>
 
 
 
@@ -31,29 +31,87 @@
         </div>
     </section>
 
-    <section id="about" class="text-white bg-blue-900">
-        <div class="max-w-4xl py-10 mx-auto">
+    <section id="about" class="text-white bg-blue-900 px-7">
+
+
+        <div class="flex flex-col items-center justify-center max-w-4xl py-10 mx-auto text-center">
             <h1
-                class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
+                class="mb-6 text-3xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
                 Tentang Acara</h1>
-            <p class="text-xl font-light text-center">Insyallah tausiyah nanti akan di isi oleh Ust. Dudi, Ust.Evi dan
-                Ust.Handy Bony dalam rangka Silaturahmi Akbar Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan
-                Gerakan shodaqoh biaya
-                pendidikan
-            </p><br>
-            <p class="mb-6 text-xl text-center text-white font-lght lg:mb-8 md:text-lg lg:text-2xl">Sabtu, 29 Juli 2023 Jam
+            <ul class="space-y-4 text-left text-white dark:text-gray-400">
+                <li class="flex items-center space-x-3">
+                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5.917 5.724 10.5 15 1.5" />
+                    </svg>
+                    <span class="text-xl">Peresmian Mesjid Al-Muttaqien</span>
+                </li>
+                <li class="flex items-center space-x-3 just">
+                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5.917 5.724 10.5 15 1.5" />
+                    </svg>
+                    <span class="text-xl">Tausiyah dan Tholabul Ilmi </span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5.917 5.724 10.5 15 1.5" />
+                    </svg>
+                    <span class="text-xl">Silaturahmi</span>
+                </li>
+                <div class="container max-w-full mt-6 ml-8 font-sans text-base">
+
+
+                </div>
+
+        </div>
+
+
+        <style>
+            .custom-label input:checked+svg {
+                display: block !important;
+            }
+        </style>
+
+
+        <div class="flex flex-row justify-center">
+            <img src="{{ asset('img/calendar.png') }}" alt="Cover" class="w-10 h-10 sm:w-20 sm:h-20">
+
+
+            <p class="py-2 mx-2 mb-6 text-xl text-center text-white sm:py-7 font-lght lg:mb-8 md:text-lg lg:text-2xl">Sabtu,
+                29 Juli
+                2023
+                Jam
                 06:00
                 s/d
                 Selesai
-                <br>Jl. Sindangsari, Kabupaten Bandung Barat
             </p>
-            <p class="mt-2 mb-6 font-light text-center text-white lg:mb-8 md:text-lg lg:text-2xl">Maps :</p>
-            <div class="flex justify-center">
-                <a href="https://goo.gl/maps/jyMto8McUgRn9cte7"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl px-6 py-2.5 text-center mr-2 mb-2">
-                    Buka Map
-                </a>
-            </div>
+        </div>
+        <div class="flex flex-row justify-center">
+            <img src="{{ asset('img/map.png') }}" alt="Cover" class="w-10 h-10 sm:w-20 sm:h-20">
+
+
+            <p class="py-2 mx-2 mb-6 text-xl text-center text-white sm:py-7 font-lght lg:mb-8 md:text-lg lg:text-2xl">
+                Jl. Sindangsari, Kabupaten Bandung Barat
+            </p>
+        </div>
+
+
+        <div class="flex justify-center">
+            <a href="https://goo.gl/maps/jyMto8McUgRn9cte7"
+                class="text-white mb-6 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl px-6 py-2.5 text-center mr-2">
+                Lihat Lokasi
+            </a>
+        </div>
+
+
+
+
+
 
         </div>
     </section>
@@ -74,18 +132,52 @@
             <h1
                 class="mb-8 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
                 Cara Hadir</h1>
-            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Isi Formulir Pendaftaran pada
-                link https://madani.scaleupiman.com</p>
-            <p class="mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Bagi peserta yang menggunakan
-                bus, dikenakan biaya sebesar <span class="font-bold"> Rp60.000/orang </p>
-            <p class="mt-4 mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">3. Setelah itu kirim bukti
-                transfer ke Nana 085220522000 (Untuk kendaraan bus)</p>
+            <p class="mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">1. Pada halaman formulir
+                pendaftaran,
+                Masukkan Nama anda.</p>
+            <p class="mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">2. Masukkan No.WA/Telepon anda yang
+                bisa
+                dihubungi.</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">3. Masukkan Alamat tempat
+                tinggal
+                anda.</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">4. Pilih jenis kendaraan (Bisa
+                membawa
+                kendaraan pribadi / Ikut serta dengan menggunakan kendaraan bus dan dikenakan biaya tambahan).</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">5. Pada label peserta, klik
+                tombol
+                Tambah peserta dan masukkan kembali Nama, No.Telepon serta tentukkan jumlah peserta yang akan hadir dalam
+                acara ini.</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">6. Jika sudah selesai mengisi
+                formulir, klik "Daftar Sekarang".</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">7. Anda akan diarahkan ke
+                halaman
+                Konfirmasi Pembayaran untuk memeriksa kembali formulir yang anda isi dan keterangan pembayaran (Akan
+                langsung selesai apabila anda memilih kendaraan pribadi).</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">8. Silahkan Transfer total
+                pembayaran
+                anda ke No.Rekening Bank yang sudah tertera.</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">9. Setelah itu, konfirmasi
+                pembayaran
+                anda melalui tombol "Konfirmasi Pembayaran" dan kirim bukti berupa Screenshot bukti transaksi telah
+                berhasil.</p>
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">10. Selesai.</p>
+            <div class="flex justify-center px-6 mb-4 sm:ml-0 sm:pl-0 sm:flex">
+
+                <a href="#form"
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                    <span
+                        class="relative text-2xl px-6  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Isi Formulir Sekarang
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
     <section id="form" class="bg-white">
         {{-- <div class="grid max-w-screen-xl px-4 py-2 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
              --}}
-        <div class="max-w-4xl px-4 py-2 py-10 mx-auto">
+        <div class="max-w-4xl px-4 py-10 mx-auto">
             <div class="flex items-center justify-center h-full mr-auto place-self-center lg:col-span-7">
                 <livewire:register-component />
             </div>
