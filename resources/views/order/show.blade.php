@@ -83,12 +83,12 @@
                 </h1>
             </div>
         </section>
-        <div class="fixed z-50 flex items-center bottom-4 right-4">
+        <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
             <a href="https://wa.me/+6285220522000"
-                class="flex items-center px-6 py-2 m-4 rounded-full shadow-lg bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
-                <img src="{{ asset('img/icon_wa2.png') }}" class="w-12">
+                class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
+                <img src="{{ asset('img/icon_wa2.png') }}" class="w-7">
                 &nbsp;&nbsp;
-                <span class="text-2xl text-white">Hubungi Kami</span>
+                <span class="w-full text-white text-md sm:text-2xl">Hubungi Kami</span>
             </a>
         </div>
     @endif

@@ -1,26 +1,32 @@
 @extends('layouts.base')
 @section('body')
     <section id="heros" class="text-white" style="background-image: url('{{ asset('img/bg-heros.png') }}');">
-        <div class="max-w-4xl mx-auto sm:flex">
-
-            <div class="flex items-center justify-center mx-2 mb-6">
+        <div class="flex-row-reverse max-w-4xl mx-auto sm:flex">
+            <div class="flex flex-row-reverse sm:mx-12 sm:mt-6">
+                <img src="{{ asset('img/Pematri_update.jpg') }}" alt="Cover" class="h-4/5">
+            </div>
+            <div class="flex items-center justify-center mx-2">
                 <div>
-                    <h1 class="flex pb-2 text-4xl font-bold py-14 px-7 sm:py-0 sm:px-0">Silaturahim Akbar</h1>
+                    <h1 class="flex pb-2 text-4xl font-bold py-14 px-7 sm:py-0 sm:px-0">Silaturahmi Akbar</h1>
                     <p class="px-6 pb-5 sm:py-4 sm:px-0">Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan
                         Shodaqoh
                         Biaya
                         Pendidikan</p>
-                    <div class="flex px-6 sm:pl-0 sm:flex">
+                    <div class="flex px-6 mb-4 sm:pl-0 sm:flex ">
+
                         <a href="#form"
-                            class="text-white sm:flex w-2/3 justify-center bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-2xl py-2.5 text-center mr-2 mb-2">
-                            Daftar Sekarang
+                            class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                            <span
+                                class="relative text-2xl px-16 py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                Daftar Sekarang
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row-reverse sm:mt-6">
-                <img src="{{ asset('img/Pematri_update.jpg') }}" alt="Cover" class="h-4/5">
-            </div>
+
+
+
 
         </div>
     </section>
@@ -228,9 +234,9 @@
     <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
         <a href="https://wa.me/+6285220522000"
             class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
-            <img src="{{ asset('img/icon_wa2.png') }}" class="w-12">
+            <img src="{{ asset('img/icon_wa2.png') }}" class="w-7">
             &nbsp;&nbsp;
-            <span class="w-full text-xl text-white sm:text-2xl">Hubungi Kami</span>
+            <span class="w-full text-white text-md sm:text-2xl">Hubungi Kami</span>
         </a>
     </div>
 
