@@ -123,6 +123,9 @@ class RegisterComponent extends Component implements HasForms
         );
 
         collect(Arr::get($data, 'participants'))->each(function ($participant) use ($order) {
+            // $data = $this->form->getState();
+            $participant['phone'] = (substr($participant['phone'], 0, 4) === '+628') ? '628' . substr($participant['phone'], 4) : ((substr($participant['phone'], 0, 2) === '08') ? '628' . substr($participant['phone'], 2) : ((substr($participant['phone'], 0, 4) === '6208') ? '628' . substr($participant['phone'], 4) : ((substr($participant['phone'], 0, 1) === '8') ? '628' . substr($participant['phone'], 1) : $participant['phone'])));
+            // dd($participant);
             Participant::query()->create([
                 'order_id'   =>  $order->id,
                 'name'   =>  data_get($participant, 'name'),
