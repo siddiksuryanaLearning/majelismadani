@@ -127,6 +127,7 @@
         </div>
     </section>
     <section id="how" class="text-white bg-blue-900">
+
         <div class="max-w-4xl px-4 py-10 mx-auto">
 
             <h1
@@ -167,7 +168,7 @@
                 <a href="#form"
                     class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                     <span
-                        class="relative text-2xl px-6  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        class="relative text-xl px-6  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                         Isi Formulir Sekarang
                     </span>
                 </a>
@@ -323,14 +324,14 @@
         </div>
     </section>
 
-    <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
-        <a href="https://wa.me/+6285220522000"
-            class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
-            <img src="{{ asset('img/icon_wa2.png') }}" class="w-7">
-            &nbsp;&nbsp;
-            <span class="w-full text-white text-md sm:text-2xl">Hubungi Kami</span>
-        </a>
-    </div>
+        <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
+            <a href="https://wa.me/+6285220522000"
+                class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">
+                <img src="{{ asset('img/whatsapp1.png') }}" class="w-7">
+                &nbsp;&nbsp;
+                <span class="w-full text-white text-md sm:text-xl">Hubungi Kami</span>
+            </a>
+        </div>
 
     </dl>
     </div>
