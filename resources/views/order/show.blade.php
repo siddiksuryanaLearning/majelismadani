@@ -19,7 +19,7 @@
                 </div>
                 <table class="w-full mb-8">
                     <thead>
-                        <tr>
+                        <tr class="">
                             <th class="font-bold text-left text-gray-700">
                                 Deskripsi
                             </th>
@@ -30,21 +30,22 @@
                     <tbody>
                         <tr>
                             <td class="text-left text-gray-700">
-                                <hr>Peserta
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">Peserta
 
                             </td>
                             <td class="text-right text-gray-700">
-                                <hr>{{ $order->qty }} Orang
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">{{ $order->qty }}
+                                Orang
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td class="font-bold text-left text-gray-700">
-                                <hr>Total
+                            <td class="text-left text-gray-700 mb-3font-bold">
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray">Total
                             </td>
                             <td class="font-bold text-right text-gray-700">
-                                <hr> @currency($order->qty * 60000)
+                                <hr style="height:2px;border-width:0;color:gray;background-color:gray"> @currency($order->qty * 60000)
                             </td>
                         </tr>
                     </tfoot>
@@ -69,12 +70,18 @@
                     menekan
                     tombol di bawah
                 </p>
-                <div class="flex flex-col items-center">
+                <div class="flex items-center justify-between">
+                    <a href="https://madani.scaleupiman.com/"
+                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md px-4 py-2.5 text-center mr-2 mb-2">
+                        kembali
+                    </a>
                     <a href="https://wa.me/+6285220522000"
-                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2">
+                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md px-4 py-2.5 text-center mr-2 mb-2">
                         Konfirmasi Pembayaran
+                    </a>
+
                 </div>
-                </a>
+
 
 
 
@@ -92,12 +99,25 @@
     @elseif($order->vehicle == 'private')
         <section id="heros" class="w-full h-screen mb-10 bg-sky-700">
             <div
-                class="flex items-center justify-center h-screen sm:justify-center sm:h-screen sm:flex sm:items-center bg-sky-700">
+                class="flex flex-col items-center justify-center h-screen py-2 sm:justify-center sm:h-screen sm:flex sm:items-center bg-sky-700">
                 <h1 class="text-white md:text-4xl">Terimakasih telah Mendaftar,<br>
                     <p>Kami tunggu kedatangan anda</p>
                 </h1>
+                <div class="flex justify-between py-16 mx-4">
+                    <a href="https://madani.scaleupiman.com/"
+                        class=" text-white bg-gradient-to-r px-8 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md py-2.5 text-center mr-2 mb-2">
+                        kembali
+                    </a>
+                    <a href="https://wa.me/+6285220522000"
+                        class=" text-white bg-gradient-to-r px-4 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md py-2.5 text-center mr-2 mb-2">
+                        Narahubung
+                    </a>
+
+                </div>
             </div>
+
         </section>
+
         <div class="fixed bottom-0 right-0 z-50 flex items-center sm:right-4 sm:bottom-4">
             <a href="https://wa.me/+6285220522000"
                 class="flex items-center w-full px-2 py-2 m-3 rounded-full shadow-lg sm:px-6 sm:w-full bg-gradient-to-r from-blue-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800">

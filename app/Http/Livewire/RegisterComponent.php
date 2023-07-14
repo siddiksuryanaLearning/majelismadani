@@ -39,7 +39,6 @@ class RegisterComponent extends Component implements HasForms
                         ->debounce(1000)
                         ->label('No. WA/Telepon')
                         ->maxLength(14)
-                        ->unique(Order::class, 'phone')
                         ->tel()
                         ->numeric()
                         ->telRegex('/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\.\/0-9]*$/'),
