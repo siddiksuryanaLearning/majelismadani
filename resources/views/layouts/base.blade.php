@@ -35,7 +35,7 @@ Shodaqoh Biaya Pendidikan" />
         content="Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan
 Shodaqoh Biaya Pendidikan" />
     <meta property="og:description" content="29 Juli 2023, Jam 06:00 s/d Selesai" />
-    <meta property="og:image" content="https://i.pinimg.com/564x/c4/46/60/c44660164b8155377e69b6b84423e4c3.jpg" />
+    <meta property="og:image" content="https://i.pinimg.com/750x/45/22/ee/4522ee9d3db77904068d8175a798e6be.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
