@@ -17,8 +17,6 @@
         content="https://sidiksuryanass.files.wordpress.com/2023/07/safeimagekit-resized-img-1.png">
     <meta property="og:type" content="website">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
     <meta property="og:url" content="https://daftar.majelismadani.id/">
     {{-- end meta --}}
 
