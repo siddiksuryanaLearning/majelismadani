@@ -76,7 +76,7 @@
                         class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-xl px-4 py-2.5 text-center mr-2 mb-2">
                         Konfirmasi Pembayaran
                     </a>
-                    <a href="https://madani.scaleupiman.com/"
+                    <a href="https://daftar.majelismadani.id/"
                         class="items-center justify-center text-xl text-center text-black underline">
                         kembali
                     </a>
@@ -113,7 +113,7 @@
                     </a>
 
                 </div>
-                <a href="https://madani.scaleupiman.com/" class="text-2xl text-white underline">
+                <a href="https://daftar.majelismadani.id/" class="text-2xl text-white underline">
                     kembali
                 </a>
             </div>
