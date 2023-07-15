@@ -151,13 +151,14 @@
                 acara ini.</p>
             <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">6. Jika sudah selesai mengisi
                 formulir, klik "Daftar Sekarang".</p>
-            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">7. Anda akan diarahkan ke
+            <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">7. Jika memilih kendaraan Bus
+                Anda akan diarahkan ke
                 halaman
                 Konfirmasi Pembayaran untuk memeriksa kembali formulir yang anda isi dan keterangan pembayaran (Akan
                 langsung selesai apabila anda memilih kendaraan pribadi).</p>
             <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">8. Silahkan Transfer total
                 pembayaran
-                anda ke No.Rekening Bank yang sudah tertera.</p>
+                anda ke No.Rekening Bank yang sudah tertera, (untuk kendaraan bus).</p>
             <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">9. Setelah itu, konfirmasi
                 pembayaran
                 anda melalui tombol "Konfirmasi Pembayaran" dan kirim bukti berupa Screenshot bukti transaksi telah

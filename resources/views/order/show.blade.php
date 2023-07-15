@@ -70,17 +70,19 @@
                     menekan
                     tombol di bawah
                 </p>
-                <div class="flex items-center justify-between">
-                    <a href="https://madani.scaleupiman.com/"
-                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md px-4 py-2.5 text-center mr-2 mb-2">
-                        kembali
-                    </a>
+                <div class="flex flex-col items-center justify-center">
+
                     <a href="https://wa.me/+6285220522000"
-                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md px-4 py-2.5 text-center mr-2 mb-2">
+                        class=" text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-xl px-4 py-2.5 text-center mr-2 mb-2">
                         Konfirmasi Pembayaran
+                    </a>
+                    <a href="https://madani.scaleupiman.com/"
+                        class="items-center justify-center text-xl text-center text-black underline">
+                        kembali
                     </a>
 
                 </div>
+
 
 
 
@@ -100,20 +102,20 @@
         <section id="heros" class="w-full h-screen mb-10 bg-sky-700">
             <div
                 class="flex flex-col items-center justify-center h-screen py-2 sm:justify-center sm:h-screen sm:flex sm:items-center bg-sky-700">
-                <h1 class="text-white md:text-4xl">Terimakasih telah Mendaftar,<br>
+                <h1 class="text-2xl text-center text-white sm:text-4xl">Terimakasih telah Mendaftar,<br>
                     <p>Kami tunggu kedatangan anda</p>
                 </h1>
-                <div class="flex justify-between py-16 mx-4">
-                    <a href="https://madani.scaleupiman.com/"
-                        class=" text-white bg-gradient-to-r px-8 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md py-2.5 text-center mr-2 mb-2">
-                        kembali
-                    </a>
+                <div class="flex justify-center py-16">
+
                     <a href="https://wa.me/+6285220522000"
-                        class=" text-white bg-gradient-to-r px-4 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md py-2.5 text-center mr-2 mb-2">
+                        class="text-xl text-white bg-gradient-to-r px-24 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-md py-2.5 text-center mr-2 mb-2">
                         Narahubung
                     </a>
 
                 </div>
+                <a href="https://madani.scaleupiman.com/" class="text-2xl text-white underline">
+                    kembali
+                </a>
             </div>
 
         </section>
