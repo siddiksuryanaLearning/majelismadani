@@ -24,13 +24,13 @@
     <link rel="canonical" href="https://daftar.majelismadani.id/">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Cek Mutasi Bank Secara Otomatis Rekening Indonesia - Moota.co">
+    <meta property="og:title" content="SILATURAHMI AKBAR">
     <meta property="og:description"
         content="Peresmian Masjid Al-Muttaqien Madrasah Karya Madani dan Gerakan Shodaqoh Biaya Pendidikan">
     <meta property="og:url" content="https://daftar.majelismadani.id/>
     <meta property="og:site_name"
         content="Moota.co">
-    <meta property="article:publisher" content="https://www.facebook.com/appmoota/">
+    <meta property="article:publisher" content="https://daftar.majelismadani.id/">
     <meta property="article:modified_time" content="2022-11-25T09:13:17+00:00">
     <meta property="og:image"
         content="https://sidiksuryanass.files.wordpress.com/2023/07/safeimagekit-resized-img-1.png">
