@@ -4,8 +4,10 @@
         <p class="my-2 text-md text-slate-500">Nama Pemesan Harus dimasukan di kolom Peserta</p>
         {{ $this->form }}
     </div>
-    <p class="text-sm text-slate-500">*Catatan : untuk peserta dengan kendaraan naik bus, akan dikoordinasi
-        terlebih dahulu oleh tim panitia</p>
+    <p class="text-sm leading-7 text-slate-500">*Catatan : Pihak panitia menyediakan Bus bagi bapak/ibu Jama'ah yang
+        memerlukan
+        alat transportasi dan keberangkatan akan dikoordinasi terlebih dahulu oleh
+        panita, atau ibu dan bapak jama'ah diperkenankan untuk membawa kendaraan pribadi</p>
 
     <div class="flex justify-center w-full my-5">
         <button type="submit"

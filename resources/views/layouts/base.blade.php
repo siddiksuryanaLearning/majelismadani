@@ -32,10 +32,9 @@
         content="Moota.co">
     <meta property="article:publisher" content="https://daftar.majelismadani.id/">
     <meta property="article:modified_time" content="2022-11-25T09:13:17+00:00">
-    <meta property="og:image"
-        content="https://sidiksuryanass.files.wordpress.com/2023/07/safeimagekit-resized-img-1.png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
+    <meta property="og:image" content="https://sidiksuryanass.files.wordpress.com/2023/07/img_meta.png">
+    <meta property="og:image:width" content="586">
+    <meta property="og:image:height" content="586">
     <meta property="og:image:type" content="image/png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:label1" content="Est. reading time">

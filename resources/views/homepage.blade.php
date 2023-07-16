@@ -11,9 +11,14 @@
                 Pendidikan
             </p>
             <div class="flex flex-row-reverse sm:w-1/2 sm:mx-12 sm:mt-6">
-                <img src="{{ asset('img/pemater_terupdate.png') }}" alt="Cover" class="h-4/5">
+                <img src="{{ asset('img/img_section1.png') }}" alt="Cover" class="h-4/5">
             </div>
-            <div class="flex justify-center px-6 mt-10 mb-4 sm:pl-0 sm:flex">
+            <div class="flex flex-col items-center justify-center mt-6">
+                <p class="text-lg text-white">Pendaftaran hingga tanggal 25 Juli 2023</p>
+                <p class="text-xl font-bold text-white">Kouta Terbatas!</p>
+
+            </div>
+            <div class="flex items-center justify-center px-6 mt-8 mb-4 sm:pl-0 sm:flex">
 
                 <a href="#form"
                     class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
@@ -121,7 +126,7 @@
             <h1
                 class="py-6 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
                 Pemateri</h1>
-            <img src="{{ asset('img/pemateri_update.png') }}"
+            <img src="{{ asset('img/img_section3.png') }}"
                 class="w-3/4 mx-auto bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                 alt="mockup">
         </div>
@@ -144,7 +149,9 @@
                 anda.</p>
             <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">4. Pilih jenis kendaraan (Bisa
                 membawa
-                kendaraan pribadi / Ikut serta dengan menggunakan kendaraan bus dan dikenakan biaya tambahan).</p>
+                kendaraan pribadi / Pihak panitia menyediakan Bus bagi bapak/ibu Jama'ah yang memerlukan alat transportasi
+                dengan tambahan biaya Rp 60.000/Orang).</p>
+
             <p class="mt-4 mb-6 text-lg font-light text-white lg:mb-8 md:text-lg lg:text-2xl">5. Pada label peserta, klik
                 tombol
                 Tambah peserta dan masukkan kembali Nama, No.Telepon serta tentukkan jumlah peserta yang akan hadir dalam
@@ -193,7 +200,8 @@
         openFaq4: false,
         openFaq5: false,
         openFaq6: false
-    }" class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+    }"
+        class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
         <div class="container mx-auto">
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4">
