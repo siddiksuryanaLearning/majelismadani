@@ -15,7 +15,7 @@
             </div>
             <div class="flex flex-col items-center justify-center mt-6">
                 <p class="text-lg text-white">Pendaftaran hingga tanggal 25 Juli 2023</p>
-                <p class="text-xl font-bold text-white">Kouta Terbatas!</p>
+                <p class="text-xl font-bold text-white">Kuota Terbatas!</p>
 
             </div>
             <div class="flex items-center justify-center px-6 mt-8 mb-4 sm:pl-0 sm:flex">
@@ -126,7 +126,7 @@
             <h1
                 class="py-6 text-2xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl xl:text-4xl">
                 Pemateri</h1>
-            <img src="{{ asset('img/img_section3.png') }}"
+            <img src="{{ asset('img/img_section31.png') }}"
                 class="w-3/4 mx-auto bg-center bg-cover sm:scale-100 sm:bg-top md:bg-left lg:bg-right xl:bg-bottom "
                 alt="mockup">
         </div>
