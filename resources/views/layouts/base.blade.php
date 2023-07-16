@@ -58,6 +58,20 @@
     {{ $slot ?? '' }}
 
     @livewire('notifications')
+    <script>
+        document.getElementById('btnCopy').addEventListener('click', function() {
+            var textToCopy = '7167797789'; // Ganti dengan teks yang ingin Anda salin
+
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', textToCopy);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            alert('Nomor Rekening disalin!');
+        });
+    </script>
 </body>
 
 </html>
