@@ -66,7 +66,7 @@
                     <span class="text-2xl font-bold">716.779.778.9<span>
 
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center mt-6 mb-4">
                     <svg class="w-10 h-10 hover:scale-150" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -74,7 +74,7 @@
                     </svg>
 
                     <button id="btnCopy"
-                        class="px-4 py-2 font-bold text-gray-800 bg-white border-2 border-black rounded drop-shadow-2xl hover:bg-black hover:text-white">Salin
+                        class="px-4 font-bold text-gray-800 bg-white border-2 border-black rounded drop-shadow-2xl hover:bg-black hover:text-white">Salin
                         Nomor Rekening</button>
                 </div>
                 <p class="py-4 text-center text-gray-500">Kirim bukti pembayaran atau screenshoot melalui whatsapp, dengan

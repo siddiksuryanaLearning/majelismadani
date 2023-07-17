@@ -91,7 +91,7 @@
                 29 Juli
                 2023
                 Jam
-                06:00
+                08:00
                 s/d
                 Selesai
             </p>
