@@ -3,6 +3,9 @@
     @if ($order->vehicle == 'bus')
         <section id="heros" class="mb-10 bg-white-700">
             <div class="max-w-md px-6 py-8 mx-auto mt-8 bg-white border rounded-lg shadow-lg">
+                <h1 class="mb-4 text-2xl font-bold text-center text-blue-600">Selamat Anda Telah Terdaftar <br> Segera
+                    Lakukan
+                    Pembayaran</h1>
                 <h1 class="my-4 text-2xl font-bold text-center text-gray-600">Detail Pembayaran</h1>
                 <hr class="mb-2">
                 <div class="flex mb-6">
