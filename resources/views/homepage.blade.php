@@ -24,7 +24,7 @@
                     class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                     <span
                         class="relative text-2xl px-10  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Daftar Sekarang
+                        Pendaftaran Ditutup
                     </span>
                 </a>
             </div>
@@ -178,7 +178,7 @@
                     class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                     <span
                         class="relative text-xl px-6  py-2.5 transition-all ease-in duration-75 bg-gradient-to-r from-orange-500 to-pink-500 hover:bg-gradient-to-bl dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Isi Formulir Sekarang
+                        Pendaftaran Ditutup
                     </span>
                 </a>
             </div>
@@ -189,7 +189,7 @@
              --}}
         <div class="max-w-4xl px-4 py-10 mx-auto">
             <div class="flex items-center justify-center h-full mr-auto place-self-center lg:col-span-7">
-                <livewire:register-component />
+                {{-- <livewire:register-component /> --}}
             </div>
         </div>
     </section>
